@@ -1,0 +1,59 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "jquery": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "no-console": 0,
+    "space-before-function-paren": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eol-last": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "spaced-comment": 0,
+    "react/require-default-props": 0,
+    "react/forbid-prop-types": 0,
+    "react/prop-types": 0,
+    "camelcase": [0, {"properties": "never"}],
+    "no-plusplus": [0, { "allowForLoopAfterthoughts": true }],
+    "radix": 0,
+    "no-shadow": 0,
+    "react/self-closing-comp": 0,
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 0,
+    "no-unused-expressions": 0,
+    "jsx-a11y/label-has-for": 0,
+    "import/no-named-as-default": 0,
+    "max-len": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/sort-comp": [
+      1,
+      {
+    "order": [
+      "type-annotations",
+      "static-methods",
+      "lifecycle",
+      "everything-else",
+      "render"
+    ]
+      }
+    ]
+  },
+  "globals": {
+    "logger": true,
+    "jsdom" : true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
